@@ -54,7 +54,7 @@ class Calculadora:
              def perfecto(numero):
 
               class Intermedio(Basico):
-               def numerosN(n): # aplicar polimorfismo
+               def numerosN(n): # aplicar polimorfismo....
                 def factorial(numero): # 
                  def fibonacci(n):
                   def primosGemelos(num1,num2):
