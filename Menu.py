@@ -1,16 +1,78 @@
 class Menu:
-    def __init__(self):
-        pass
-    def Principal_menu(self):
-        print("1)calculadora")
-        print("2) operaciones con numero")
-        print("3)tratamientos de listas")
-        print("4)Operaciones de cadenas")
-        print("5)salir")
-        opc=int(input("Elige una opción[1....5]: ") )
+    def menu_Principal():
+     
+     print("")
+    print() 
+    print("BIENVENIDOS AL MENU PRINCIPAL") 
+    print()
+    print("1)calculadora")
+    print("2) numero")
+    print("3)listas")
+    print("4)cadenas")
+    print("5)salir")
+    opc= input("Elija la opcion[1....5]: ")
 
+    if opc == "1":
+
+        print(" Bienvenido al menu calculadora ")
+        print("1)Suma")
+        print("2)Resta")
+        print("3)Multiplicacion")
+        print("4)Division")
+        print("5)Exponente")
+        print("6)Valor Absoluto")
+        print("7)Circuferencia")
+        print("8)Area de un Circulo")
+        print("9)Area de una Cuadrado")
+        print("10)salir")
+        opc=input('Elija la opcion que desea reaalizar del [1....10]: ')
         if opc == "1":
-            print("calculalo")
+            class Calculadora:
+                def __init__(self, numero1, numero2):
+                    self.num1=numero1=int(input("ingrese el primer numero: "))
+                    self.num2=numero2=int(input("ingrese el segundo numero: "))
+                def suma(self):
+                    self.suma+=self.num1, self.num2
+                    print('la suma es: '+str(self.suma))
+            Calculadora     
+                    
+        elif opc == "2":
+            print('Resta')    
+
+        
+
+    elif opc == "2":
+        print(" Operaciones con Numero") 
+        print("1)Perfecto")
+        print("2)Primo")
+        print("3)salir")
+        opc2= input("Elija la opcion[1....5]: ")
+        if opc2 == "1":
+            print("Numeros perfectos")
+            num=int(input("Ingrese Numero: "))
+            print("El numero ")
+    elif opc == "3":
+        print("listas")    
+    elif opc == "4":
+        print("cadenas ")   
+    elif opc == "5":
+        print("salir")
+
+    else:
+        print('valor erroneo')
+    
+    #def __init__(self):
+        #pass
+""" def Principal_menu():
+    print("1)calculadora")
+    print("2) operaciones con numero")
+    print("3)tratamientos de listas")
+    print("4)Operaciones de cadenas")
+    print("5)salir")
+    opc=input("Elige una opción[1....5]: ")
+
+    if opc == "1":
+        print("calculalo")
     # # class Calculadora:
     # #  def __init__(self, numero1, numero2):
     # #      self.num1=numero1=int(input("ingrese el primer numero: "))
@@ -64,8 +126,8 @@ class Menu:
     # # #opccal=int(input("Elige una opción: ") )       
                
     #       print("2) operaciones con numero")
-        elif opc == "2":
-            print('operaciones con numereiss')       
+    elif opc == "2":
+        print('operaciones con numereiss')       
     # # class Basico:
     # #      def  numerosN(n):
     # #       def multiplo(numero):
@@ -80,8 +142,8 @@ class Menu:
     # #               def primosGemelos(num1,num2):
     # #                def  amigos(num1,num2):
     #                   print("3)tratamientos de listas")
-        elif opc == "3":
-            print('tratamiento con listas')
+    elif opc == "3":
+        print('tratamiento con listas')
                     # #   class Lista(Intermedio):
                     # #    def __init__(self, lista):
                     # #     def  presentarLista():
@@ -96,8 +158,8 @@ class Menu:
                     # #             def copiarTuplaLista(tupla):
                     # #              def vueltoLista(listaClientesDiccionario):
                     #               print("4)Operaciones de cadenas")
-        elif opc == "4":
-            print('cadenas de operaciones')
+    elif opc == "4":
+        print('cadenas de operaciones')
                                 # #   class Cadena:
                                 # #    def __init__(self, cadena):
                                 # #     def  recorrerCadena():
@@ -110,12 +172,14 @@ class Menu:
                                 # #            def retornaValor(posicion):
                                 # #             def concatenarCadena(dato):
                                 #              print("5)salir")
-        elif opc == "5":
-            print('salirss')
-        else:
-            print('Opcion no validad')    
+    elif opc == "5":
+        print('salirss')
+    else:
+        print('Opcion no validad') """    
 #opc=int(input("Elige una opción[1....5]: ") )
 
+
 Menu()
+
 
     
