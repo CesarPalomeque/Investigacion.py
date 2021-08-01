@@ -1,7 +1,7 @@
-class Menu_Principal:
+class Menu:
     def __init__(self):
         pass
-    def Principal_menu():
+    def Principal_menu(self):
         print("1)calculadora")
         print("2) operaciones con numero")
         print("3)tratamientos de listas")
@@ -114,8 +114,8 @@ class Menu_Principal:
             print('salirss')
         else:
             print('Opcion no validad')    
-opc=int(input("Elige una opción[1....5]: ") )
+#opc=int(input("Elige una opción[1....5]: ") )
 
-Menu_Principal()
+Menu()
 
     
