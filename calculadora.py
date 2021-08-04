@@ -4,16 +4,16 @@ class Calculadora:
         self.num2=numero2
         
     def suma(self):
-        total_Suma= self.num1 + self.num2
-        print("La suma del {} y {} es: {}".format(self.num1,self.num2,total_Suma))
+        result_Suma= self.num1 + self.num2
+        print("La suma del los numeros: {} y {} es: {}".format(self.num1,self.num2,result_Suma))
     
     def resta(self):
-        total_Resta= self.num1 - self.num2
-        print("La resta del {} y {} es: {}".format(self.num1, self.num2, total_Resta))
+        result_Resta= self.num1 - self.num2
+        print("La resta del los numeros {} y {} es: {}".format(self.num1, self.num2, result_Resta))
     
     def multiplicacion(self):
-        total_Multiplicacion= self.num1 * self.num2
-        print("La multiplicación de los numeros {} y {} es de: {}".format(self.num1,self.num2,total_Multiplicacion))
+        result_Multiplicacion= self.num1 * self.num2
+        print("La multiplicación de los numeros {} y {} es de: {}".format(self.num1,self.num2,result_Multiplicacion))
                 
     def division(self):
         total_Division=self.num1 / self.num2
@@ -21,21 +21,28 @@ class Calculadora:
         
 class CalEstandar(Calculadora):
     def __init__(self, numero1, numero2):
-        super().__init__(self,numero1, numero2)
+        super().__init__(numero1,numero2)
         
         
     def multiplicacion(self):
-        Resultado= self.num1 * self.num2
+        Resultado= self.num2 * self.num1
         return Resultado
     
-    def exponente(self):
-        total_Exp = self.num1**self.num2
-        print("la respuesta es: ",total_Exp)
+    def exponente(self,base,exponente):
+        resultado=1
+        for i in range(exponente):
+            resultado*=base
+        return resultado    
 
-    def valorAbsoluto(sefl,numero3):
-        if numero3 < 0:
-            numero3 = numero3 *- 1
-        return numero3
+        
+
+    def valorAbsoluto(sefl,numero):
+        if numero >= 0:
+            return numero
+        else:
+
+             numero = -numero
+        return numero
 
     
 class calCientifica(Calculadora):
@@ -55,12 +62,31 @@ class calCientifica(Calculadora):
     
     def areaCuadrado(self):
         return self.num2 ** 2
-cal=Calculadora(1,1)
-print(cal.suma())
-print(cal.resta())
-print(cal.multiplicacion())
-print(cal.division())
-cal1 = calCientifica(1,4)
-print('La circuferencia es',cal1.circunferencia())
-print('El area del circulo es',cal1.areaCirculo())
-print('area del cuadrado',cal1.areaCuadrado())        
+cal=Calculadora(12,2)
+# print(cal.suma())
+# print(cal.resta())
+# print(cal.multiplicacion())
+# print(cal.division())
+cal.suma()
+print('\n')
+cal.resta()
+print('\n')
+cal.multiplicacion()
+print('\n')
+cal.division()
+print('\n')
+cal1=CalEstandar(8,1)
+
+print('la multiplicacio es: ',cal1.multiplicacion())
+print('\n')
+print('el resultado del metodo_exponente es: ',cal1.exponente(2,5))
+print('\n')
+print('el valor absoluto es: ',cal1.valorAbsoluto(-4))
+print('\n')
+cal2 = calCientifica(2,2)
+print('La circuferencia es: ',cal2.circunferencia())
+print('\n')
+print('El area del circulo es: ',cal2.areaCirculo())
+print('\n')
+print('area del cuadrado: ',cal2.areaCuadrado())    
+    
