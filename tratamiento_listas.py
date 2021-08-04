@@ -6,11 +6,11 @@ class Tratamiento_Listas():
         
 
 
-    def PresentarLista(self):
+    def presentarLista(self):
         print('Recorrer y presentar los datos de una lista')
         for list in self.lista:
             print(list,end="   ")
-        print() 
+        print('\n') 
 
         
     
@@ -28,7 +28,7 @@ class Tratamiento_Listas():
 
   
     
-    def ListaFactorial(self):
+    def listaFactorial(self):
         print('Retornar una lista con los factoriales')
         for pos,i in enumerate(self.lista): 
             if i >= 0:
@@ -65,7 +65,7 @@ class Tratamiento_Listas():
 
     
     def listaNotas(self,listaNotasDicccionario):
-        print('Recorrer una lista de diccionario con notas de alumnos')
+        print('Recorrer una lista de diccionario con notas')
         for nom in listaNotasDicccionario:
             for clave,valor in nom.items():
                 print(clave,":",valor,end="  ")
@@ -75,9 +75,9 @@ class Tratamiento_Listas():
     
     def insertarLista(self,valor,posicion):
         print('Insertar un dato en una Lista dada la Posición')
-        print()
+        print('\n')
         auxlista=[]        
-        for pos,ele in enumerate(self.lista):
+        for posicion,ele in enumerate(self.lista):
             if valor < ele:
                 break
         for i in range(posicion):
@@ -92,8 +92,8 @@ class Tratamiento_Listas():
   
     
     def eliminarLista(self,lista):
-        print('Eliminar todas las ocurrencias en una Lista')
-        print()
+        print('Eliminar todos los elementos de la lista en la Lista')
+        print('\n')
         lista2 = {}
         for i in lista:
             if i in lista2:
@@ -103,7 +103,7 @@ class Tratamiento_Listas():
         print("Queda lo siguiente:",lista2)
         print("En total son {} elementos sin contar las repeticiones".format(len(lista2)))
         lista3 = []        
-        for clave, valor in enumerate(lista2):
+        for clave,valor in enumerate(lista2):
             lista3.append(valor)
         return (lista3)   
 
@@ -111,12 +111,12 @@ class Tratamiento_Listas():
   
     
     def retornaValorLista(self,lista):
-        print(' Retornar cualquier valor de una lista eliminándolo ')
+        print(' Retornar valor de una lista eliminándolo ')
         print()
         n=int(input('Que valor vais a eliminar: '))      
-        for x,i in enumerate(lista):
+        for j,i in enumerate(lista):
             if i == n:
-                del lista[x]  
+                del lista[j]  
         return (lista)
 
   
@@ -133,8 +133,8 @@ class Tratamiento_Listas():
         pago=float(input("Ingrese pago del cliente: "))
         nom=(input("Ingrese nombre del cliente: ")).capitalize()
         print(nom)
-        for x in listaClientesDiccionario:
-            for clave, valor in x.items():     
+        for i in listaClientesDiccionario:
+            for clave, valor in i.items():     
                 if clave == nom:
                     if valor > 0:
                         cambio=pago-valor
@@ -149,27 +149,27 @@ class Tratamiento_Listas():
  
 
 lista=[5,4,3,2,1]
-lista=(3,4,6,8)
-listaClientesDiccionarios=[{'julio':68},{'luis':90},{'pedro':30}]
+lista=(3,4,6,8,71,53)
+listaClientesDiccionarios=[{'julio':6},{'cesar':25},{'hannah':11},{'jocabed':19},{'mishel':27},{'Emanuel':30}]
 ord1= Tratamiento_Listas(lista)
-ord1.PresentarLista()
-ord1.buscarLista(40)
-ord1.ListaFactorial()
+ord1.presentarLista()
+ord1.buscarLista(8)
+ord1.listaFactorial()
 ord1.listaPrimo()
 ord1.listaNotas(listaClientesDiccionarios)
-print(ord1.insertarLista(600,5))
-print()
+print(ord1.insertarLista(12,3))
+print('\n')
 lista1 = []       
-num = int(input("Cuantos elementos desea en la lista?: "))
-for x in range(num):
+num = int(input("Cuantos elementos desea en la lista: "))
+for i in range(num):
     valor = int(input("Ingrese el elemento:")) 
     lista1.append(valor)
 aux=lista1
 print(ord1.eliminarLista(aux))
 lista2 = []       
-num = int(input("Cuantos elementos desea en la lista?: "))
-for x in range(num):
-    valor = int(input("Ingrese el elemento:")) 
+num = int(input("Cuantos elementos desea en la lista: "))
+for i in range(num):
+    valor = int(input("Ingrese el elemento: ")) 
     lista2.append(valor)
 aux=lista2
 print(ord1.retornaValorLista(aux))
@@ -177,7 +177,7 @@ print(ord1.copiarTuplaLista())
 diccionario={}
 lista=[]
 num=int(input("ingrese cuantos diccionarios desea ingresar: "))
-for x in range(num):
+for i in range(num):
     clave=(input("ingrese su clave para el diccionario: ")).capitalize()
     valor=int(input("ingrese el valor de la clave para el diccionario: "))
 
