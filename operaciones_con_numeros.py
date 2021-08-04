@@ -59,13 +59,16 @@ class Intermedio(Basico):
         return resultado
     
     def fibonacci(self,n):
-        a = 0
-        b = 1
-        for i in range(n):
+        a,b = 0,1
+
+        while a < n:
+            print(a,end='')
+       # for i in range(n):
             c = a+b
-            a = b
-            b = c
-        return a
+            a,b = b, a+b
+            print('\n')
+            #b = c
+        #return a
         
     def primosGemelos (self,numero1,numero2):
         a = 0
@@ -116,3 +119,6 @@ class Intermedio(Basico):
             print("Los numeros {} y {} son numeros amigos.".format(numero1, numero2))
         else:
             print("Los numeros {} y {} no son numeros amigos.".format(numero1, numero2))
+
+
+num=Basico()          
