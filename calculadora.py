@@ -63,10 +63,7 @@ class calCientifica(Calculadora):
     def areaCuadrado(self):
         return self.num2 ** 2
 cal=Calculadora(12,2)
-# print(cal.suma())
-# print(cal.resta())
-# print(cal.multiplicacion())
-# print(cal.division())
+
 cal.suma()
 print('\n')
 cal.resta()
