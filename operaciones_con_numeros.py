@@ -1,4 +1,3 @@
-
 class Basico:
     def __init__(self):
         pass
@@ -27,9 +26,9 @@ class Basico:
             if numero % i == 0:
                 contador += 1
         if contador == 2:
-            print("Es un numero primo")
+            print("Es un numero primo: ",numero)
         else:
-            print("No es un numero primo")
+            print("El numero {} No es un numero primo".format(numero),':´(')
 
     def perfecto(self, numero):
         acu=0
@@ -37,9 +36,9 @@ class Basico:
             if numero % i == 0:
                 acu = acu+i
         if acu == numero:
-            print("Numero Perfecto")
+            print("El Numero {} si es Perfecto".format(numero))
         else:
-            print("Numero no es perfecto")
+            print("El Numero {} no es perfecto".format(numero))
             
         
 class Intermedio(Basico):
@@ -58,19 +57,18 @@ class Intermedio(Basico):
             resultado = resultado * i
         return resultado
     
+    
     def fibonacci(self,n):
         a,b = 0,1
 
         while a < n:
             print(a,end='')
-       # for i in range(n):
             c = a+b
             a,b = b, a+b
             print('\n')
-            #b = c
-        #return a
+         
         
-    def primosGemelos (self,numero1,numero2):
+    def primosGemelos(self,numero1,numero2):
         a = 0
         if numero1 > 0 and numero2 > 0 and numero1 != numero2:
             if numero1 > numero2:
@@ -120,5 +118,17 @@ class Intermedio(Basico):
         else:
             print("Los numeros {} y {} no son numeros amigos.".format(numero1, numero2))
 
+lista=[2,1,22,345,12,3]
+ope=Basico()
+print(ope.numerosN(53)) 
+print(ope.multiplo(6,6))  
+print(ope.divisoresNumero(54))
+print(ope.primo(6))
+print(ope.perfecto(6))
+ope1=Intermedio()
+print(ope1.numerosN(3))
+print(ope1.factorial(5))
+print(ope1.fibonacci(5))
+print(ope1.primosGemelos(3,5))
+print(ope1.amigos(220,284))
 
-num=Basico()          
