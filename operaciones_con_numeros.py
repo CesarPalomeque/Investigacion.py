@@ -52,10 +52,7 @@ class Intermedio(Basico):
             suma = suma + cont
             cont += 1
         return suma
-        # i = 1
-        # while i <= n:
-        #     print(i)
-        #     i = i + 1
+        
             
     def factorial(self,numero):
         resultado = 1
@@ -132,7 +129,7 @@ class Intermedio(Basico):
 # print(ope.primo(6))
 # print(ope.perfecto(6))
 ope1=Intermedio()
-print(ope1.numerosN(8))
+print(ope1.numerosN(3))
 # print(ope1.factorial(5))
 # print(ope1.fibonacci(5))
 # print(ope1.primosGemelos(3,5))
