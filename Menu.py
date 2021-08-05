@@ -110,7 +110,7 @@ while opc != "5":
                 print("Presentar los números de 1 a n")
                 n1 = int(input("Ingrese número : "))
                 Bas = Basico
-                Bas.numerosN(n1)
+                Bas.numerosN()
                 input("Presione una tecla para continuar")
             elif opc2 == "2":
                 os.system("cls")
