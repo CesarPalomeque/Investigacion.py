@@ -46,10 +46,16 @@ class Intermedio(Basico):
         pass
         
     def numerosN(self,n):
-        i = 1
-        while i <= n:
-            print(i)
-            i = i + 1
+        cont = 1
+        suma = 0
+        while n >= cont :
+            suma = suma + cont
+            cont += 1
+        return suma
+        # i = 1
+        # while i <= n:
+        #     print(i)
+        #     i = i + 1
             
     def factorial(self,numero):
         resultado = 1
@@ -125,8 +131,8 @@ class Intermedio(Basico):
 # print(ope.divisoresNumero(54))
 # print(ope.primo(6))
 # print(ope.perfecto(6))
-# ope1=Intermedio()
-# print(ope1.numerosN(3))
+ope1=Intermedio()
+print(ope1.numerosN(8))
 # print(ope1.factorial(5))
 # print(ope1.fibonacci(5))
 # print(ope1.primosGemelos(3,5))
