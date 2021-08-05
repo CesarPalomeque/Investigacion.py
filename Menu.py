@@ -117,7 +117,9 @@ while opc != "5":
                 print("Sumar los números de 1 a n")
                 n1 = int(input("Ingrese número : "))
                 Inter = Intermedio()
-                print(Bas.numerosN(n1))
+                print("La suma de los número desde el 1 hasta el número {} es: {}".format(Inter.numerosN(n1)))
+                #print(Bas.numerosN(n1))deaweef
+                #23
                 
                 #print("La suma de los número desde el 1 hasta el número {} es: {}".format(n1,Inter.numerosN()))
                 input("Presione una tecla para continuar")
