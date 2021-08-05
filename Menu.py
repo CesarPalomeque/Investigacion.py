@@ -117,11 +117,9 @@ while opc != "5":
                 print("Sumar los números de 1 a n")
                 n1 = int(input("Ingrese número : "))
                 Inter = Intermedio()
-                print("La suma de los número desde el 1 hasta el número {} es: {}".format(Inter.numerosN(n1)))
-                #print(Bas.numerosN(n1))deaweef
-                #23
                 
-                #print("La suma de los número desde el 1 hasta el número {} es: {}".format(n1,Inter.numerosN()))
+
+                print("La suma de los número desde el 1 hasta el número {} es: {}".format(n1,Inter.numerosN(3)))
                 input("Presione una tecla para continuar")
             elif opc2 == "3":
                 os.system("cls")
@@ -129,7 +127,7 @@ while opc != "5":
                 n1 = int(input("Ingrese un número : "))
                 n2 = int(input("Ingrese el multiplo del número :"))
                 Bas = Basico
-                res = Bas.Multiplo(n1,n2)
+                res=Bas.multiplo(n1,n2)
                 if res == 0:
                     print("El número {} es multiplo de {}".format(n1,n2))
                 else:
