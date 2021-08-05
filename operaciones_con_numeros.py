@@ -118,17 +118,17 @@ class Intermedio(Basico):
         else:
             print("Los numeros {} y {} no son numeros amigos.".format(numero1, numero2))
 
-lista=[2,1,22,345,12,3]
-ope=Basico()
-print(ope.numerosN(53)) 
-print(ope.multiplo(6,6))  
-print(ope.divisoresNumero(54))
-print(ope.primo(6))
-print(ope.perfecto(6))
-ope1=Intermedio()
-print(ope1.numerosN(3))
-print(ope1.factorial(5))
-print(ope1.fibonacci(5))
-print(ope1.primosGemelos(3,5))
-print(ope1.amigos(220,284))
+
+# ope=Basico()
+# print(ope.numerosN(53)) 
+# print(ope.multiplo(6,6))  
+# print(ope.divisoresNumero(54))
+# print(ope.primo(6))
+# print(ope.perfecto(6))
+# ope1=Intermedio()
+# print(ope1.numerosN(3))
+# print(ope1.factorial(5))
+# print(ope1.fibonacci(5))
+# print(ope1.primosGemelos(3,5))
+# print(ope1.amigos(220,284))
 
