@@ -128,7 +128,7 @@ while opc != "5":
                 n2 = int(input("Ingrese el multiplo del número :"))
                 Bas = Basico
                 res=Bas.multiplo(n1,n2)
-                if res:
+                if res == 0:
                     print("El número {} es multiplo de {}".format(n1,n2))
                 else:
                     print("El número {} no es multiplo de {}".format(n1, n2))
