@@ -1,4 +1,5 @@
 import os
+from typing import Text
 from calculadora import CalEstandar, calCientifica
 from operaciones_con_numeros import Basico, Intermedio
 from tratamiento_listas import Tratamiento_Listas
@@ -62,7 +63,7 @@ while opc != "5":
                 n1 = int(input("Ingrese base: "))
                 n2 = int(input("Ingrese exponente: "))
                 cal = CalEstandar(n1,n2)
-                print("El resultado de {}**{}={}".format(n1,n2,cal.base()))
+                print("El resultado es: ",cal.exponente(n1,n2))
                 input("Presione una tecla para continuar")
             elif opc1 == "6":
                 os.system("cls")
@@ -76,21 +77,21 @@ while opc != "5":
                 print("La circunferencia del radio")
                 radio = int(input("Ingrese el radio: "))
                 cal = calCientifica(0,0)
-                print("La circunferencia del radio {} es {}".format(radio, cal.circunferencia(radio)))
+                print("La circunferencia del radio es: ",cal.circunferencia())
                 input("Presione una tecla para continuar")
             elif opc1 == "8":
                 os.system("cls")
                 print("El Area de un circulo")
                 radio = int(input("Ingrese el radio: "))
                 cal = calCientifica(0,0)
-                print("El area del circulo con el radio {} es {}".format(radio,cal.perimetro(radio)))
+                print("El area del circulo con el radio es: ",cal.areaCirculo())
                 input("Presione una tecla para continuar")
             elif opc1 == "9":
                 os.system("cls")
                 print("El Area del cuadrado")
                 lado = int(input("Ingrese el valor de un lado:"))
                 cal = calCientifica(0,0)
-                print("El ara del cuadrado con los lados {} es {}".format(lado,cal.area(lado)))
+                print("El ara del cuadrado con los lados es: ",cal.areaCuadrado())
                 input("Presione una tecla para continuar")
             elif opc1 == "10":
                 print("Gracias por usar el sistema")
@@ -463,7 +464,7 @@ while opc != "5":
                 print("Opción no valida")
                 input("Presione una tecla para continuar")
     elif opc == "5":
-        print("Lo esperamos en una proxima ocasión")
+        print("salir")
     else:
         print("Opción no valida")
         input("Presione una tecla para continuar")
