@@ -109,16 +109,17 @@ while opc != "5":
                 os.system("cls")
                 print("Presentar los números de 1 a n")
                 n1 = int(input("Ingrese número : "))
-                Bas = Basico
-                Bas.numerosN()
+                Bas = Basico()
+                print(Bas.numerosN(n1))
                 input("Presione una tecla para continuar")
             elif opc2 == "2":
                 os.system("cls")
                 print("Sumar los números de 1 a n")
                 n1 = int(input("Ingrese número : "))
-                Inter = Intermedio
+                Inter = Intermedio()
+                print(Bas.numerosN(n1))
                 
-                print("La suma de los número desde el 1 hasta el número {} es: {}".format(n1,Inter.numerosN(n1)))
+                #print("La suma de los número desde el 1 hasta el número {} es: {}".format(n1,Inter.numerosN()))
                 input("Presione una tecla para continuar")
             elif opc2 == "3":
                 os.system("cls")
@@ -228,7 +229,7 @@ while opc != "5":
                 os.system("cls")
                 print("Recorrer y presentar los datos de una lista")
                 print("Lista =",lista)
-                Lis = lista(lista)
+                Lis = lista()
                 Lis.presentarLista()
                 input("Presione una tecla para continuar")
             elif opc3 == "2":
