@@ -122,10 +122,10 @@ class Intermedio(Basico):
         else:
             print("Los numeros {} y {} no son numeros amigos.".format(numero1, numero2))
 
-num=8
+#num=8
 # multiplo=2
-ope=Basico
-print(ope.numerosN(num)) 
+#ope=Basico
+#print(ope.numerosN(num)) 
 # res =(ope.multiplo(num, multiplo))        
 # if res == 0:
 #     print("El número {} es multiplo de {}".format(num,multiplo))
