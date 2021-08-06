@@ -2,9 +2,11 @@ class Basico:
     def __init__(self):
         pass
     
-    def numerosN(n):
-        for i in range(1,n+1):
-            print(i)
+    def numerosN(n):  
+        cont = 0
+        while n != cont :
+            cont += 1
+            print(cont)
             
     
     def multiplo(numero, multiplo):  
