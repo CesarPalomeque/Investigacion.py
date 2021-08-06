@@ -2,16 +2,14 @@ class Basico:
     def __init__(self):
         pass
     
-    def numerosN(self,n):
+    def numerosN(n):
         for i in range(1,n+1):
             print(i)
             
     
-    def multiplo(self, numero1, numero2):
-        if numero1 % numero2 == 0:
-            print("El numero {} si es multiplo de {}".format(numero1,numero2))
-        else:
-            print("El numero {} no es multiplo de {}".format(numero1,numero2))
+    def multiplo(numero, multiplo):  
+        res = numero % multiplo
+        return res
             
     def divisoresNumero(self, numero):
         lista = []
@@ -122,9 +120,15 @@ class Intermedio(Basico):
         else:
             print("Los numeros {} y {} no son numeros amigos.".format(numero1, numero2))
 
-#num=8
-# ope=Basico()
-# print(ope.numerosN(53)) 
+num=8
+multiplo=2
+ope=Basico
+print(ope.numerosN(num)) 
+res =(ope.multiplo(num, multiplo))        
+if res == 0:
+    print("El número {} es multiplo de {}".format(num,multiplo))
+else:
+    print("El número {} no es multiplo de {}".format(num, multiplo))
 # print(ope.multiplo(6,6))  
 # print(ope.divisoresNumero(54))
 # print(ope.primo(6))
