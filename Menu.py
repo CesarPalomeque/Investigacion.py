@@ -110,8 +110,8 @@ while opc != "5":
                 os.system("cls")
                 print("Presentar los números de 1 a n")
                 n1 = int(input("Ingrese número : "))
-                Bas = Basico()
-                print(Bas.numerosN(n1))
+                ope = Basico()
+                print(ope.numerosN(n1))
                 input("Presione una tecla para continuar")
             elif opc2 == "2":
                 os.system("cls")
@@ -127,8 +127,8 @@ while opc != "5":
                 print("Múltiplo de cualquier número")
                 n1 = int(input("Ingrese un número : "))
                 n2 = int(input("Ingrese el multiplo del número :"))
-                Bas = Basico
-                res=Bas.multiplo(n1,n2)
+                ope = Basico
+                res=ope.multiplo(n1,n2)
                 if res == 0:
                     print("El número {} es multiplo de {}".format(n1,n2))
                 else:
