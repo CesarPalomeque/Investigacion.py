@@ -148,40 +148,41 @@ class Tratamiento_Listas():
   
  
 
-lista=[5,4,3,2,1]
-lista=(3,4,6,8,71,53)
-listaClientesDiccionarios=[{'julio':6},{'cesar':25},{'hannah':11},{'jocabed':19},{'mishel':27},{'Emanuel':30}]
-ord1= Tratamiento_Listas(lista)
-ord1.presentarLista()
-ord1.buscarLista(8)
-ord1.listaFactorial()
-ord1.listaPrimo()
-ord1.listaNotas(listaClientesDiccionarios)
-print(ord1.insertarLista(12,3))
-print('\n')
-lista1 = []       
-num = int(input("Cuantos elementos desea en la lista: "))
-for i in range(num):
-    valor = int(input("Ingrese el elemento:")) 
-    lista1.append(valor)
-aux=lista1
-print(ord1.eliminarLista(aux))
-lista2 = []       
-num = int(input("Cuantos elementos desea en la lista: "))
-for i in range(num):
-    valor = int(input("Ingrese el elemento: ")) 
-    lista2.append(valor)
-aux=lista2
-print(ord1.retornaValorLista(aux))
-print(ord1.copiarTuplaLista())
-diccionario={}
-lista=[]
-num=int(input("ingrese cuantos diccionarios desea ingresar: "))
-for i in range(num):
-    clave=(input("ingrese su clave para el diccionario: ")).capitalize()
-    valor=int(input("ingrese el valor de la clave para el diccionario: "))
+# lista=[5,4,3,2,1]
+# lista=(3,4,6,8,71,53)
+# listaClientesDiccionarios=[{'julio':6},{'cesar':25},{'hannah':11},{'jocabed':19},{'mishel':27},{'Emanuel':30}]
+# ord1= Tratamiento_Listas(lista)
+# ord1.presentarLista()
+# ord1.buscarLista(8)
+# ord1.listaFactorial()
+# ord1.listaPrimo()
+# ord1.listaNotas(listaClientesDiccionarios)
+# print(ord1.insertarLista(12,3))
+# print('\n')
+# lista1 = []       
+# num = int(input("Cuantos elementos desea en la lista: "))
+# for i in range(num):
+#  valor = int(input("Ingrese el elemento: ")) 
+ 
+# lista1.append(valor)
+# aux=lista1
+# print(ord1.eliminarLista(aux))
+# lista2 = []       
+# num = int(input("Cuantos elementos desea en la lista: "))
+# for i in range(num):
+#     valor = int(input("Ingrese el elemento: ")) 
+#     lista2.append(valor)
+# aux=lista2
+# print(ord1.retornaValorLista(aux))
+# print(ord1.copiarTuplaLista())
+# diccionario={}
+# lista=[]
+# num=int(input("ingrese cuantos diccionarios desea ingresar: "))
+# for i in range(num):
+#     clave=(input("ingrese su clave para el diccionario: ")).capitalize()
+#     valor=int(input("ingrese el valor de la clave para el diccionario: "))
 
-    diccionario[clave]=valor
-    lista.append(diccionario)
-    diccionario={} 
-ord1.vueltoLista(lista)
+#     diccionario[clave]=valor
+#     lista.append(diccionario)
+#     diccionario={} 
+# ord1.vueltoLista(lista)
