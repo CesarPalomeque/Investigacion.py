@@ -40,7 +40,7 @@ while opc != "5":
                 n1 = int(input("ingrese numero1: "))
                 n2 = int(input("ingrese numero2: "))
                 cal= CalEstandar(n1,n2)
-                print(("El resultado de la resta {}-{}={}".format(n1,n2,cal.resta())))
+                print(("El resultado de la resta {}-{}= {}".format(n1,n2,cal.resta())))
                 input("Presione una tecla para continuar")
             elif opc1 == "3":
                 os.system("cls")
@@ -56,7 +56,7 @@ while opc != "5":
                 n1 = int(input("ingrese numero1: "))
                 n2 = int(input("ingrese numero2: "))
                 cal = CalEstandar(n1,n2)
-                print("El resultado de la divison {}/{}={}".format(n1,n2,cal.division()))
+                print("El resultado de la divison {}/{}= {}".format(n1,n2,cal.division()))
                 input("Presione una tecla para continuar")
             elif opc1 == "5":
                 os.system("cls")
@@ -92,7 +92,7 @@ while opc != "5":
                 print("El Area del cuadrado")
                 lado = int(input("Ingrese el valor de un lado:"))
                 cal = calCientifica(2,3)
-                print("El ara del cuadrado con los lados es: ",cal.areaCuadrado())
+                print("El ara del cuadrado con sus lados es: ",cal.areaCuadrado())
                 input("Presione una tecla para continuar")
             elif opc1 == "10":
                 print("Gracias por usar el sistema")
@@ -120,7 +120,7 @@ while opc != "5":
                 Inter = Intermedio()
                 
 
-                print("La suma de los número desde el 1 hasta el número {} es: {}".format(n1,Inter.numerosN(3)))
+                print("La suma de los número desde el 1 hasta el número {} es: {}".format(n1,Inter.numerosN()))
                 input("Presione una tecla para continuar")
             elif opc2 == "3":
                 os.system("cls")
