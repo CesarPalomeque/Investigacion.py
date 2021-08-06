@@ -39,7 +39,7 @@ while opc != "5":
                 n1 = int(input("ingrese numero1: "))
                 n2 = int(input("ingrese numero2: "))
                 cal= CalEstandar(n1,n2)
-                print("El resultado de la resta {}-{}={}".format(n1,n2,cal.resta()))
+                print(("El resultado de la resta {}-{}={}".format(n1,n2,cal.resta())))
                 input("Presione una tecla para continuar")
             elif opc1 == "3":
                 os.system("cls")
