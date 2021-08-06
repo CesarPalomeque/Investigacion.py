@@ -46,6 +46,7 @@ class Intermedio(Basico):
         pass
         
     def numerosN(self,n):
+        
         cont = 1
         suma = 0
         while n >= cont :
@@ -121,15 +122,15 @@ class Intermedio(Basico):
         else:
             print("Los numeros {} y {} no son numeros amigos.".format(numero1, numero2))
 
-
+num=8
 # ope=Basico()
 # print(ope.numerosN(53)) 
 # print(ope.multiplo(6,6))  
 # print(ope.divisoresNumero(54))
 # print(ope.primo(6))
 # print(ope.perfecto(6))
-#ope1=Intermedio()
-#print(ope1.numerosN(3))
+ope1=Intermedio()
+print(ope1.numerosN(num))
 # print(ope1.factorial(5))
 # print(ope1.fibonacci(5))
 # print(ope1.primosGemelos(3,5))
