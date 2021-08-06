@@ -17,7 +17,7 @@ class Menu:
 opc = ""
 while opc != "5":
     os.system("cls")
-    print("Bienvenidos al menu principal.")
+    print("Bienvenidos al menu principal.\n")
     men = Menu("Menú Principal",["1)Calculadora","2)Operación_Números","3)Tratamiento_de_Listas","4)Operaciones_de_Cadenas","5)Salir"])
     opc = men.menu()
     if opc == "1":
