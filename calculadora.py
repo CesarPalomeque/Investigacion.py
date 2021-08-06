@@ -6,7 +6,7 @@ class Calculadora:
     def suma(self):
         result_Suma= self.num1 + self.num2
         print("La suma del los numeros: {} y {} es: {}".format(self.num1,self.num2,result_Suma))
-        return result_Suma
+        
     
     def resta(self):
         result_Resta= self.num1 - self.num2
@@ -63,9 +63,10 @@ class calCientifica(Calculadora):
     
     def areaCuadrado(self):
         return self.num2 ** 2
-# cal=Calculadora(12,2)
+#cal=Calculadora(12,2)
 
-# cal.suma()
+#cal.suma()
+
 # print('\n')
 # cal.resta()
 # print('\n')
