@@ -120,7 +120,7 @@ while opc != "5":
                 Inter = Intermedio()
                 
 
-                print("La suma de los número desde el 1 hasta el número {} es: {}".format(n1,Inter.numerosN()))
+                print("La suma de los número desde el 1 hasta el número {} es: {}".format(n1,Inter.numerosN(n1)))
                 input("Presione una tecla para continuar")
             elif opc2 == "3":
                 os.system("cls")
